@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background: url(Resourses/background.jpg);
+    background-size: cover;
+    font-family:Handwrite;
+    font-size: 14pt;
+    height: 100vh;
+      
+}
+header{
+    margin: 50px auto;
+    width:max-content;
+}
+
+span{
+    color: #e1e1e1;
+    position: relative;
+    font-size: 24pt;
+}
+
+.hide{
+    display: none;
+}
+
+@font-face {
+    font-family:Handwrite;
+    src: url(Resourses/Sansumi-Regular.ttf);
+}
+#intro{
+    max-width: 700px;
+    min-width: 700px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+  
+}
+
+#container{
+   width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pict{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: solid 2px #e1e1e1;
+   
+}
+
+#pictures_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+   
+  
+    
+}
+
+.button{
+    height: 50px;
+    width: 50px;
+    opacity: 0.6;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    border-radius:30px;
+    border: none;
+    top:45%;
+}
+.prev{
+    left:-25px;
+    background: url(Resourses/right.png);
+    background-size: cover;
+    transform: scale(-1, 1);
+}
+
+.next{
+    right: -25px;
+    background: url(Resourses/right.png);
+    background-size: cover;
+   
+}
+.prev:hover, .next:hover{
+    opacity: 1;
+}
+
+.dots_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #e1e1e1;
+    margin: 5px;
+   
+}
+.dot.active{
+    background-color: #000000;
+    border-color: #e1e1e1;
+    border-style: solid;
+}
+
+.dot:hover{
+    cursor: pointer;
+    
+}
+
+.dot:not(.dot.active):hover{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: black;
+}
+
+
+
